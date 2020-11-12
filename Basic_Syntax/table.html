@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 (Table)</title>
+</head>
+<body>
+    <table border="1" width="50%">
+        <caption>- 표 제목 -</caption>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>국어</th>
+                <th>수학</th>
+                <th>영어</th>
+            </tr>
+        </thead>
+        <tfoot align="center">
+            <td colspan="4">footer</td>
+        </tfoot>
+        <tbody align="center">
+            <tr>
+                <td>Kim</td>
+                <td>65</td>
+                <td>72</td>
+                <td>83</td>
+            </tr>
+            <tr>
+                <td>Lee</td>
+                <td>85</td>
+                <td>53</td>
+                <td>91</td>
+            </tr>
+            <tr>
+                <td>Goo</td>
+                <td>64</td>
+                <td>97</td>
+                <td>83</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br><br><br><hr><br><br>
+
+    <table border="1" bordercolor="blue" width="50%" height="250" cellspacing="5">
+        <caption>- 비정형 표 -</caption>
+        <tbody align="center">
+            <tr bgcolor="red" >
+                <td rowspan="4">1 rowspan</td>
+                <td colspan="2">2 colspan</td>
+            </tr>
+            <tr>
+                <td rowspan="2">3</td>
+                <td>4</td>         
+            </tr>
+            <tr>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
