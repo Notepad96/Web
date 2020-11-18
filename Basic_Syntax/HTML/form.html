@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+          <legend>입력 폼</legend>
+          ID : <input type="text" value="기본값" maxlength=5>
+          <br>
+          Password : <input type="password">
+          <br>
+          Info : <textarea cols="20" rows="5">정보</textarea>
+          <br>
+          email : <input type="email" placeholder="aabbcc@google.com">
+          <br>
+          url : <input type="url" placeholder="http://">
+          <br>
+          phone : <input type="tel" placeholder="010-1111-2222">
+          <br>
+          search : <input type="search" value="def">
+          <br>
+          <input type="submit">
+        </fieldset>
+    </form>
+    <br><br><br>
+
+    <form>
+        <fieldset>
+          <legend>선택 폼</legend>
+          - 체 크 박 스 -<br>
+          1번 <input type="checkbox" value="1">
+          2번 <input type="checkbox" value="2">
+          3번 <input type="checkbox" value="3" checked>
+          <br><br>
+          - 라 디 오 버 튼 -<br>
+          1번 <input type="radio" value="1" name="rrr" checked>
+          2번 <input type="radio" value="2" name="rrr">
+          3번 <input type="radio" value="3" name="rrr">
+          <br><br>
+          - 데 이 터 리 스 트 -<br>
+          <input type="text" list="dtl">
+          <datalist id="dtl">
+            <option value="1번">
+            <option value="11번">
+            <option value="2번">
+            <option value="3번">
+          </datalist>
+          <br><br>
+          - 콤 보 박 스 -<br>
+          <select>
+            <option value="1">1번</option>
+            <option value="2">2번</option>
+            <option value="3" selected>3번</option>
+          </select>
+          <br><br>
+        </fieldset>
+    </form>
+      
+    <br><br><br>
+
+    <form>
+        <fieldset>
+          <legend>그 외 폼</legend>
+          <input type="button" value="일반 버튼">
+          <br>
+          <input type="reset" value="리셋 버튼">
+          <br>
+          <input type="image" src="https://tistory2.daumcdn.net/tistory/4194557/attach/3cb683e17fb94473b830f8d7a99b6ada" width="50">
+          <br>
+          <input type="submit" value="제출 버튼">
+          <br>
+          <button type="submit">버튼 태그 사용</button>
+          <br>
+          컬러 피커 : <input type="color">
+          <br>
+          <label>
+            숫자 입력 : <input type="number" step="0.5" min="5" max="10">
+          </label>
+          <br>
+          숫자 입력 : 10<input type="range" min="10" max="20">20
+          <br>
+        </fieldset>
+    </form>
+</body>
+</html>
